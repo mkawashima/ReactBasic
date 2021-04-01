@@ -1,15 +1,13 @@
 import React from "react";
+import ColorfullMessage from "./components/ColorfullMessage";
 
 const App = () => {
   const onClickButton = () => alert();
-  const contentStyle = {
-    color: "blue",
-    fontize: "18px"
-  };
   return (
     <>
-      <h1 style={contentStyle}>こんにちは！</h1>
-      <p style={{ color: "red" }}>お元気ですか？</p>
+      <h1 style={{ color: "red" }}>こんにちは！</h1>
+      <ColorfullMessage color="blue">お元気ですか</ColorfullMessage>
+      <ColorfullMessage color="purple">元気でーす</ColorfullMessage>
       <button onClick={onClickButton}>ボタン</button>
     </>
   );
