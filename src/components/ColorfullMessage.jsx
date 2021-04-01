@@ -1,14 +1,15 @@
 import React from "react";
 
 const ColorFullMessage = (props) => {
+  const { color, children } = props;
   const contentStyle = {
-    color: props.color,
+    color,
     fontize: "18px"
   };
 
   return (
     <>
-      <p style={contentStyle}>props.children</p>
+      <p style={contentStyle}>{children}</p>
     </>
   );
 };
